@@ -24,11 +24,25 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import MapCarousel from "../components/products_carousel";
+import navbar from "../components/navbar";
+import navSlide from "../components/navbar";
+
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
+  const initPlugin = (querySelector, Component) => {
+    const els = document.querySelectorAll(querySelector);
+    if (els) {
+      els.forEach(el => {
+        Component(el);
+      });
+    }
+  };
+initPlugin(".js-products-carousel", MapCarousel);
+initSelect2();
+navSlide();
+
 });

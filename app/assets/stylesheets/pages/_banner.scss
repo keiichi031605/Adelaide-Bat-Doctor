@@ -1,0 +1,60 @@
+.banner-img {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("Banner.jpg");
+  object-fit: cover;
+  height: 70vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+
+.banner-text p {
+  color: silver;
+  font-size: 28px;
+}
+
+
+@media screen and (max-width:768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar-list {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navbar-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+    position: absolute;
+    padding: 0;
+  }
+
+  .navbar-list li {
+    margin: 0 0 50px 0;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%)
+}
