@@ -1,46 +1,38 @@
-.navbar-abd {
-  display: flex;
-  justify-content: space-between;
-  background: white;
-
+#navbar-wrapper {
   position: fixed;
   z-index: 2;
   opacity: 1;
+  height: 50px;
   width: 100vw;
   margin: 0;
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  background: white;
 }
 
-.navbar-abd .navbar-collapse {
-  flex-grow: 0;
+.logo img {
+  width: 110px;
 }
 
-.navbar-left img {
-  width: 150px;
-}
-
-.navbar-right {
-  padding-top: 8px;
+.navbar-list {
+  padding-top: 16px;
   padding-right: 4px;
-}
-
-.navbar-sns {
   display: flex;
 }
 
-.navbar-sns ul {
+.navbar-list ul {
   display: flex;
   list-style-type: none;
   margin: 0px;
 }
 
-.navbar-sns a {
+.navbar-list a {
   margin: 5px;
   color: black;
 }
 
-.navbar-sns p {
+.navbar-contact p {
   font-size: 8px;
   margin-left: 8px;
   margin: 0;
@@ -50,25 +42,34 @@
   flex-wrap: wrap;
 }
 
-.navbar-title h3 {
-  margin-top: 8px;
-  margin-bottom: 0px;
-  margin-left: 70px;
-  font-size: 18px;
-  font-weight: bold;
+.burger {
+  display: none;
+  margin-right: 60px;
+  cursor: pointer;
 }
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  opacity: .8;
+  margin: 5px;
+  border-radius: 1px;
+  transition: all 0.3s ease;
+}
+
 
 @media screen and (max-width:768px) {
   body {
     overflow-x: hidden;
   }
 
-  .navbar-abd {
+  .navbar-list {
     position: absolute;
     right: 0;
     height: 100vh;
     top: 50px;
-    background-color: black;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,20 +78,25 @@
     transition: transform 0.5s ease-in;
   }
 
-  .navbar-right {
+  .navbar-list ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     top: 50px;
-    position: absolute;
     padding: 0;
   }
 
-  .navbar-right li {
-    margin: 0 0 50px 0;
+  .navbar-list li {
+    margin: 0 0 12px 0;
+    font-size:18px;
+  }
+
+  .burger {
+    display: block;
   }
 }
 
 .nav-active {
   transform: translateX(0%)
 }
+
