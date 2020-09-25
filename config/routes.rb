@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
-  resources :products
+  root to: 'products#index'
+  resources :products, only: [:index, :show]
 end
