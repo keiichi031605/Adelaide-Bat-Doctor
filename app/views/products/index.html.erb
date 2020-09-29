@@ -9,68 +9,23 @@
   <div class="products-wrapper">
     <div class="horizontal-scrollable" id="products-scrollable">
       <div class="horizontal-row px-5 js-products-carousel">
-        <!-- card -->
-        <div class= "card mt-3 carousel-card-wrapper">
-          <% @products.each do |product| %>
-          <img src="<%= product.photo %>">
-          <% end %>
-          <div class="card-description p-3 map-card">
-          </div>
-        </div>
-        <!-- card -->
-        <div class= "card mt-3 carousel-card-wrapper">
 
-          <!-- <img src="assets/Productone.jpg" alt="Friendr"> -->
-          <div class="card-description p-3 map-card">
+        <% @products.each do |product| %>
+          <div class= "card mt-3 carousel-card-wrapper">
+            <img src="<%= product.photo %>">
+            <div class="card-description p-3 map-card">
+              <%= link_to product.name, product_path(product) %>
+              <p><%= product.description %></p>
+            </div>
           </div>
-        </div>
-        <!-- card -->
-        <div class= "card mt-3 carousel-card-wrapper">
-          <img src="assets/Productone.jpg" alt="Friendr">
-          <div class="card-description p-3 map-card">
+        <% end %>
+
+          <div class= "card mt-3 carousel-card-wrapper">
+            <img src="assets/Quote.jpg">
+            <div class="card-description p-3 map-card">
+            </div>
           </div>
-        </div>
-        <!-- card -->
-        <div class= "card mt-3 carousel-card-wrapper">
-          <img src="assets/Productone.jpg" alt="Friendr">
-          <div class="card-description p-3 map-card">
-          </div>
-        </div>
-        <!-- card -->
-        <div class= "card mt-3 carousel-card-wrapper">
-          <img src="assets/Productone.jpg" alt="Friendr">
-          <div class="card-description p-3 map-card">
-          </div>
-        </div>
-        <!-- card -->
-        <div class= "card mt-3 carousel-card-wrapper">
-          <img src="assets/Productone.jpg" alt="Friendr">
-          <div class="card-description p-3 map-card">
-          </div>
-        </div>
-        <!-- card -->
-        <div class= "card mt-3 carousel-card-wrapper">
-          <img src="assets/Productone.jpg" alt="Friendr">
-          <div class="card-description p-3 map-card">
-          </div>
-        </div>
-        <!-- card -->
-        <div class= "card mt-3 carousel-card-wrapper">
-          <img src="assets/Productone.jpg" alt="Friendr">
-          <div class="card-description p-3 map-card">
-          </div>
-        </div>
-        <!-- card -->
-        <div class= "card mt-3 carousel-card-wrapper">
-          <img src="assets/Productone.jpg" alt="Friendr">
-          <div class="card-description p-3 map-card">
-          </div>
-        </div>
-        <!-- card -->
-        <div class= "card mt-3 carousel-card-wrapper">
-          <img src="assets/Productone.jpg" alt="Friendr">
-          <div class="card-description p-3 map-card">
-          </div>
+
         </div>
       </div>
     </div>
