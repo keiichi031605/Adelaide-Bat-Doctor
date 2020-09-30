@@ -28,9 +28,15 @@ ActiveRecord::Schema.define(version: 2020_09_18_000557) do
     t.string "last_name"
     t.text "enquiry"
     t.string "photo"
-    t.string "email"
     t.integer "phone"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.string "email"
+    t.index ["reset_password_token"], name: "index_quotes_on_reset_password_token", unique: true
   end
+
 end
