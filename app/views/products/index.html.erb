@@ -11,21 +11,21 @@
       <div class="horizontal-row px-5 js-products-carousel">
 
         <% @products.each do |product| %>
-          <div class= "card mt-3 carousel-card-wrapper">
+          <div class= "card mt-3 product">
             <img src="<%= product.photo %>">
-            <div class="card-description p-3 map-card">
+            <div class="card-description">
+              <h4>
               <%= link_to product.name, product_path(product) %>
+              </h4>
               <p><%= product.description %></p>
             </div>
           </div>
         <% end %>
-
-          <div class= "card mt-3 carousel-card-wrapper">
+          <!-- <div class= "card mt-3">
             <img src="assets/Quote.jpg">
             <div class="card-description p-3 map-card">
             </div>
-          </div>
-
+          </div> -->
         </div>
       </div>
     </div>

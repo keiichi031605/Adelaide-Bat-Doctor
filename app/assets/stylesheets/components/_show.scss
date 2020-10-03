@@ -1,14 +1,31 @@
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  webkit-user-select: none;
-  moz-user-select: none;
-  ms-user-select: none;
-  user-select: none;
+.detailsone {
+  display: flex;
 }
 
-@media (min-width: 768px) {
-.bd-placeholder-img-lg {
-  font-size: 3.5rem;
-  }
+.detailstwo {
+  display: flex;
 }
+
+.detailsthree {
+  display: flex;
+}
+
+.card {
+  width: 130px;
+}
+
+.details img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.details-title h1 {
+  color: white;
+}
+
+.details-description p {
+  color: white;
+}
+
+
