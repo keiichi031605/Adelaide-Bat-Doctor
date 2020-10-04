@@ -11,13 +11,17 @@
 }
 
 .card {
-  width: 130px;
+  width: 160px;
 }
 
 .details img {
-  width: 130px;
-  height: 130px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
+}
+
+.text-sidebar {
+  padding:24px;
 }
 
 .details-title h1 {
@@ -29,3 +33,16 @@
 }
 
 
+@media screen and (max-width: 300px) {
+  .detailsone {
+  flex-direction: column;
+  }
+
+  .detailstwo {
+  flex-direction: column;
+  }
+
+  .detailsthree {
+  flex-direction: column;
+  }
+}
