@@ -1,17 +1,17 @@
 .products-wrapper {
   display: flex;
-  margin: 12vh 0vh 12vh 12vh;
+  margin: 12vh 12vh 12vh 0vh;
   perspective: 900px;
   height: 60vh;
   background: #1e1e1e;
+  padding-top: 20px;
 }
 
 .products-title h3 {
   font-size: 28px;
   color: silver;
   text-align: left;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 68px;
 }
 
 .product img {

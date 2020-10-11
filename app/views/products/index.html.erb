@@ -31,13 +31,33 @@
     <div class="newbats-title">
       <h3>New Bats</h3>
     </div>
+    <div class= "newbats-box m-3">
+      <img src="assets/Newbat.jpg">
+      <div class="newbats-text m-3">
+        <p>New bat text description here</p>
+      </div>
+    </div>
   </div>
 
   <div id="voucher" class="voucher-wrapper">
     <div class="voucher-title">
       <h3>Voucher</h3>
     </div>
+    <div class= "voucher-box m-3">
+      <div class="voucher-text m-3">
+        <p>New bat text description here</p>
+      </div>
+      <img src="assets/Newbat.jpg">
+    </div>
   </div>
+
+  <div
+    id="map"
+    style="width: 100%;
+    height: 600px;"
+    data-markers="<%= @markers.to_json %>">
+  </div>
+
 
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>

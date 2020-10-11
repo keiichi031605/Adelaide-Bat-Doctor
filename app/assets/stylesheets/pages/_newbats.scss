@@ -1,9 +1,9 @@
 .newbats-wrapper {
-  display: flex;
   margin: 12vh 0vh 12vh 12vh;
   perspective: 900px;
   height: 60vh;
   background: #1e1e1e;
+  padding-top: 20px;
 }
 
 .newbats-title h3 {
@@ -11,5 +11,18 @@
   color: silver;
   text-align: left;
   margin-left: 20px;
-  margin-top: 20px;
+}
+
+.newbats-box {
+  display: flex;
+}
+
+.newbats-box img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.newbats-box p {
+  color: silver;
 }
