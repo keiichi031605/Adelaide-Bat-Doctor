@@ -1,9 +1,17 @@
 .products-wrapper {
   display: flex;
-  justify-content: center;
-  margin: 4vh 0vh 16vh 8vh;
+  margin: 12vh 0vh 12vh 12vh;
   perspective: 900px;
-  height: 150px;
+  height: 60vh;
+  background: #1e1e1e;
+}
+
+.products-title h3 {
+  font-size: 28px;
+  color: silver;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .product img {
@@ -55,7 +63,7 @@
 
 #products-scrollable {
   position: absolute;
-  top: 0px;
+  top: 50px;
   left: 0px;
   z-index: 99;
   width: 100%;

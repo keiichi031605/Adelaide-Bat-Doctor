@@ -2,54 +2,20 @@
   position: fixed;
   z-index: 2;
   opacity: 1;
-  height: 50px;
+  height: 40px;
   width: 100vw;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: white;
 }
 
 .logo img {
-  width: 110px;
+  width: 90px;
 }
-
-.navbar-list {
-  padding-top: 4px;
-  padding-right: 4px;
-}
-
-
-.navbar-list ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0px;
-  padding-left: 0px;
-}
-
-.navbar-list a {
-  margin: 5px;
-  color: black;
-}
-
-.navbar-contact-m {
-  display: none;
-}
-
-.navbar-contact {
-  flex-wrap: wrap;
-}
-
-.navbar-contact p {
-  font-size: 8px;
-  margin-left: 8px;
-  margin: 0;
-}
-
 
 .burger {
-  display: none;
+  display: block;
   margin-right: 8px;
   cursor: pointer;
 }
@@ -57,58 +23,46 @@
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: black;
+  background-color: #9a9a9a;
   opacity: .8;
   margin: 5px;
   border-radius: 1px;
   transition: all 0.3s ease;
 }
 
-
-@media screen and (max-width:600px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .navbar-list {
-    position: absolute;
-    right: 0;
-    height: 100vh;
-    top: 50px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-
-  .navbar-list ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 50px;
-    padding: 0;
-  }
-
-  .navbar-list li {
-    margin: 0 0 12px 0;
-    font-size:18px;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .navbar-contact {
-    display: none;
-  }
-
-  .navbar-contact-m {
-    display: block;
-  }
+.navbar-list {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  top: 40px;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
 }
+body {
+  overflow-x: hidden;
+}
+
+
+.navbar-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50px;
+  padding: 0;
+  margin: 0 0 12px 0;
+  font-size:18px;
+}
+
+.navbar-icon {
+  background: #2f2e2e;
+  border-radius: 50px;
+}
+
 
 .nav-active {
   transform: translateX(0%)

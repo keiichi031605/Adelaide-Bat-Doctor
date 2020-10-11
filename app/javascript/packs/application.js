@@ -24,8 +24,9 @@ require("channels")
 
 // External imports
 import "bootstrap";
-import MapCarousel from "../components/products_carousel";
+import ProductCarousel from "../components/products_carousel";
 import navSlide from "../components/navbar";
+// import navbar from "../components/navbar";
 
 document.addEventListener('turbolinks:load', () => {
   const initPlugin = (querySelector, Component) => {
@@ -37,6 +38,6 @@ document.addEventListener('turbolinks:load', () => {
     }
   };
 navSlide();
-initPlugin(".js-products-carousel", MapCarousel);
-initSelect2();
+initPlugin(".js-products-carousel", ProductCarousel);
+// initSelect2();
 });
