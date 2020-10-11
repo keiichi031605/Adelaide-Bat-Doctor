@@ -7,13 +7,19 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  <!-- mapbox -->
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+　<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js">　　</script>
+　<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" /></script>
 </head>
 
 <body>
   <%= render 'shared/navbar' %>
   <%= yield %>
   <%= render 'shared/footer' %>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_pack_tag 'application' %>
+
 </body>
 </html>
