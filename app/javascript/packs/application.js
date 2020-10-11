@@ -31,7 +31,7 @@ import ProductCarousel from "../components/products_carousel";
 import navSlide from "../components/navbar";
 // import navbar from "../components/navbar";
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { showMap } from './plugins/map';
+import showMap from "../components/map";
 
 document.addEventListener('turbolinks:load', () => {
   const initPlugin = (querySelector, Component) => {

@@ -11,4 +11,4 @@ const showMap = () => {
     }
   };
 
-export { showMap }
+export default showMap;
