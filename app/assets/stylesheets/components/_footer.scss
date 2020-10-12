@@ -3,10 +3,25 @@ footer {
   color: #9a9a9a;
   text-align: center;
   background-color: #212121;
+  border-top: 2px solid silver;
 }
 
 footer p {
   margin-bottom: .25rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Balthazar", serif;
   font-size: 12px;
+}
+
+.footer-icon ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-size:18px;
+  list-style: none;
+  justify-content: center;
+}
+
+.footer-icon a {
+  color: silver;
+  margin: 8px;
 }
