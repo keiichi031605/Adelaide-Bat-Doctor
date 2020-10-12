@@ -21,7 +21,11 @@
   object-fit: cover;
 }
 
-.card-description{
+.card {
+  background-color: silver;
+}
+
+.card-description {
   width: 100%;
   position: absolute;
   bottom: 0px;
