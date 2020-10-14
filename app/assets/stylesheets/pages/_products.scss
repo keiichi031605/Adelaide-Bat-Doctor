@@ -2,7 +2,7 @@
   display: flex;
   margin: 12vh 12vh 12vh 0vh;
   perspective: 900px;
-  height: 90vh;
+  height: 80vh;
   background: #1e1e1e;
   padding-top: 20px;
   border-bottom: 2px solid silver;
@@ -19,29 +19,6 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-}
-
-.card {
-  background-color: silver;
-}
-
-.card-description {
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  color: white;
-  z-index: 99;
-  background: linear-gradient(to top, rgba(0, 0, 0 , 1) 0%, transparent 100% );
-  padding: 8px;
-}
-
-.card-description a {
-  color: white;
-  text-decoration: none;
-}
-
-.card-description p{
-  margin: 0px;
 }
 
 
@@ -68,7 +45,7 @@
 
 #products-scrollable {
   position: absolute;
-  top: 90px;
+  top: 80px;
   left: 0px;
   z-index: 99;
   width: 100%;

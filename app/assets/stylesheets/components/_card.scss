@@ -1,0 +1,22 @@
+.card {
+  background-color: silver;
+}
+
+.card-description {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  z-index: 99;
+  background: linear-gradient(to top, rgba(0, 0, 0 , 1) 0%, transparent 100% );
+  padding: 8px;
+}
+
+.card-description a {
+  color: white;
+  text-decoration: none;
+}
+
+.card-description p {
+  margin: 0px;
+}
