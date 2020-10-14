@@ -5,6 +5,7 @@
   background: #1e1e1e;
   padding-top: 20px;
   border-bottom: 2px solid silver;
+
 }
 
 .voucher-title h3 {
@@ -19,12 +20,12 @@
   justify-content: space-around;
 }
 
-.voucher-box img {
-  width: 100%;
+.voucher img {
+  width: 140px;
   height: 140px;
   object-fit: cover;
 }
 
-.voucher-box p {
+.voucher-text p {
   color: silver;
 }
