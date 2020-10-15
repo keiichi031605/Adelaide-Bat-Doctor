@@ -1,16 +1,16 @@
-.detailsone {
+.picsone {
   display: flex;
 }
 
-.detailstwo {
+.picstwo {
   display: flex;
 }
 
-.detailsthree {
+.picsthree {
   display: flex;
 }
 
-.details img {
+.pics img {
   width: 140px;
   height: 140px;
   object-fit: cover;
@@ -30,15 +30,15 @@
 
 
 @media screen and (max-width: 300px) {
-  .detailsone {
+  .picsone {
   flex-direction: column;
   }
 
-  .detailstwo {
+  .picstwo {
   flex-direction: column;
   }
 
-  .detailsthree {
+  .picsthree {
   flex-direction: column;
   }
 }
