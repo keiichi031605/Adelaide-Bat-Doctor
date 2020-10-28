@@ -1,5 +1,5 @@
 .banner-img {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("Banner.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), asset-url("Banner.jpg");
   object-fit: cover;
   height: 80vh;
   background-attachment: fixed;
