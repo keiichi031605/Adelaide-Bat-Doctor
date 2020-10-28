@@ -9,7 +9,7 @@ const showMap = () => {
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: center_point,
-      zoom: 12
+      zoom: 11
     });
       var marker = new mapboxgl.Marker()
       var abd_point = [138.594709, -34.976377]
