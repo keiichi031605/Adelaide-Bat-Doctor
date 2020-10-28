@@ -21,8 +21,7 @@ gem 'jbuilder', '~> 2.7'
 # Photos upload 25th/10
 gem 'cloudinary', '~> 1.16.0'
 gem 'carrierwave', '~> 1.3.1'
-# gem 'pg', group: :production
-# gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails', groups: [:development, :test]
 
 
 
@@ -45,7 +44,7 @@ gem 'mail_form'
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'dotenv-rails'
+  # gem 'dotenv-rails'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
