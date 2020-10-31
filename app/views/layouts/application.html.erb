@@ -11,14 +11,13 @@
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
-
 </head>
 
 <body>
   <%= render 'shared/navbar' %>
   <%= yield %>
   <%= render 'shared/footer' %>
-  <%#= javascript_include_tag 'application' %>
-  <%#= javascript_pack_tag 'application' %>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_pack_tag 'application' %>
 </body>
 </html>
