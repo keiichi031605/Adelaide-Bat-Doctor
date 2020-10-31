@@ -15,7 +15,7 @@ const showMap = () => {
       var abd_point = [138.594709, -34.976377]
 
       var popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
-        '<strong>Adelaid Bat Doctor</strong><p>We Are <a href="https://www.google.com/maps/place/Westbourne+Park+SA+5041/@-34.9724376,138.5909269,16z/data=!4m5!3m4!1s0x6ab0cfcc392bf9b1:0xb1754a681c1e1918!8m2!3d-34.9763598!4d138.5948521">Here!</a></p>'
+        '<strong>Adelaid Bat Doctor</strong><p class="map-info">We Are <a href="https://www.google.com/maps/place/Westbourne+Park+SA+5041/@-34.9724376,138.5909269,16z/data=!4m5!3m4!1s0x6ab0cfcc392bf9b1:0xb1754a681c1e1918!8m2!3d-34.9763598!4d138.5948521">Here!</a></p>'
         );
       new mapboxgl.Marker(marker)
       .setLngLat(abd_point)
