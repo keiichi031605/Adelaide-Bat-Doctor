@@ -4,12 +4,12 @@ const showMap = () => {
   const map_div = document.getElementById('map');
     if (map_div) {
     mapboxgl.accessToken = process.env.MAPBOX_API_KEY
-    var center_point = [138.594709, -34.976377]
+    var center_point = [138.600739, -34.958497]
     window.map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: center_point,
-      zoom: 11
+      zoom: 11.5
     });
       var marker = new mapboxgl.Marker()
       var abd_point = [138.594709, -34.976377]

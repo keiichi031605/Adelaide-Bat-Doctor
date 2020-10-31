@@ -8,10 +8,10 @@
 }
 
 .voucher-title h3 {
-  font-size: 28px;
+  font-size: 39px;
   color: silver;
   text-align: left;
-  margin-left: 68px;
+  margin: 36px 0 30px 68px;
 }
 
 .voucher-box {
@@ -19,12 +19,25 @@
   justify-content: space-around;
 }
 
+.voucher-box > .card {
+  height: 260px;
+}
+
 .voucher img {
-  width: 140px;
-  height: 140px;
+  width: 260px;
+  height: 260px;
   object-fit: cover;
+}
+
+.voucher-text {
+  width: 600px;
 }
 
 .voucher-text p {
   color: silver;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 700px) {
+
 }
