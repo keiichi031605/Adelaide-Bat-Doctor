@@ -39,5 +39,17 @@
 }
 
 @media screen and (max-width: 700px) {
+  .voucher-wrapper {
+  margin: 12vh 4vh 12vh 0vh;
+  height: 53vh;
+  padding-top: 5px;
+  }
 
+  .voucher-text {
+  width: 0;
+  }
+
+  .voucher-text p {
+  display: none;
+  }
 }
